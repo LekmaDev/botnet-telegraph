@@ -5,5 +5,7 @@ BotNet на C# для телеграпха
 
 # Мои данные
 TG: @lekma
+
 Discord: Lekma#7549
+
 Project LSBS for Brawl Stars: https://discord.gg/vxxYyuqDEs
